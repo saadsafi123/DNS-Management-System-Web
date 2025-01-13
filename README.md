@@ -81,7 +81,7 @@ This system aims to simplify DNS record management while ensuring data integrity
 - Member 1: Saad Safi
 - Member 2: M Aitazaz Ahsan
 - Member 3: Ehtisham Ahmed
-- Member 3: Saqib Khushal
+- Member 4: Saqib Khushal
 
 ---
 
