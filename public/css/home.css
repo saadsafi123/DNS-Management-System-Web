@@ -1,0 +1,36 @@
+
+/* Set the background image for the entire page */
+body {
+background-image: url('/css/image.png');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+color: #fff; 
+height: 100vh;
+}
+
+/* Custom button style */
+.btn-custom {
+  width: 50%;
+  height: 60px; 
+  font-size: 18px; 
+}
+
+/* Ensures buttons are 50% width for larger screens (like laptops) */
+@media (min-width: 992px) {  
+  .btn-custom {
+    width: 50%;
+    height: 60px;
+  }
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 40px; 
+  border-radius: 10px; 
+}
+
+h1, .btn {
+  z-index: 1; 
+}

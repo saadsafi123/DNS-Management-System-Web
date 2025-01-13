@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Record</title>
+</head>
+<body>
+  <h1>Delete DNS Record</h1>
+  <form action="/delete" method="POST">
+    <label for="dns">DNS:</label>
+    <input type="text" name="dns" placeholder="Enter DNS"><br><br>
+    
+    <label for="ip">OR IP Address:</label>
+    <input type="text" name="ip" placeholder="Enter IP"><br><br>
+    <button type="submit">Delete</button>
+  </form>
+  <a href="/">Go Back</a>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete DNS Record</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Delete DNS Record</h1>
+
+    <!-- Display alerts for success or error -->
+    <% if (error) { %>
+      <div class="alert alert-danger text-center" role="alert">
+        <%= error %>
+      </div>
+    <% } %>
+
+    <form action="/delete" method="POST">
+      <div class="mb-3">
+        <label for="dns" class="form-label">DNS</label>
+        <input type="text" name="dns" placeholder="Enter DNS" class="form-control">
+      </div>
+      
+      <div class="mb-3">
+        <label for="ip" class="form-label">OR IP Address</label>
+        <input type="text" name="ip" placeholder="Enter IP Address" class="form-control">
+      </div>
+
+      <button type="submit" class="btn btn-danger w-100">Delete Record</button>
+    </form>
+    
+    <div class="mt-4 text-center">
+      <a href="/" class="btn btn-secondary">Go Back</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
